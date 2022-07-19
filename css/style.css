@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: hsl(225deg, 100%, 94%);
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Wrapper {
+  width: 40rem;
+  height: 60rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+.Wrapper .top-image {
+  width: 40rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.Wrapper .content {
+  margin: 4.5rem;
+  margin-bottom: 1.5rem;
+}
+.Wrapper .content .heading {
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: hsl(223deg, 47%, 23%);
+}
+.Wrapper .content .description {
+  padding: 0.5rem;
+  color: hsl(224deg, 23%, 55%);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.6rem;
+  text-indent: 0.5rem;
+  -moz-text-align-last: center;
+       text-align-last: center;
+}
+.Wrapper .subscription {
+  border-radius: 1rem;
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
+  height: 9rem;
+  background-color: hsl(225deg, 100%, 98%);
+  position: relative;
+}
+.Wrapper .subscription .icon {
+  position: absolute;
+  top: 2rem;
+  left: 0rem;
+  size: 4rem;
+  margin-left: 2rem;
+}
+.Wrapper .subscription .duration {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  color: hsl(223deg, 47%, 23%);
+  height: 2rem;
+  font-weight: bold;
+  position: absolute;
+  top: 2rem;
+  left: 8rem;
+}
+.Wrapper .subscription .price {
+  height: 2rem;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  color: hsl(224deg, 23%, 55%);
+  position: absolute;
+  left: 8rem;
+  top: 4.5rem;
+}
+.Wrapper .subscription .link {
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+}
+.Wrapper .subscription .link .change {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: hsl(245deg, 75%, 52%);
+}
+.Wrapper .subscription .link .change:hover {
+  color: hsl(245deg, 75%, 70%);
+  text-decoration: none;
+}
+.Wrapper .btn {
+  background-color: hsl(245deg, 75%, 52%);
+  color: white;
+  font-family: "Red Hat Display", sans-serif;
+  margin-top: 3rem;
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
+  height: 4.5rem;
+  width: 31rem;
+  border: none;
+  border-radius: 1rem;
+}
+.Wrapper .btn:hover {
+  cursor: pointer;
+  background-color: hsl(245deg, 75%, 70%);
+}
+.Wrapper .cancel_now {
+  display: inline-block;
+  margin-top: 1.5rem;
+  width: 100%;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  color: hsl(224deg, 23%, 55%);
+  font-weight: bold;
+}
+.Wrapper .cancel_now:hover {
+  cursor: pointer;
+  color: hsl(223deg, 47%, 23%);
+}
+
+@media screen and (max-width: 50rem) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .Wrapper {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */

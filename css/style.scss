@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+$border-radius:1rem;
+$font-family: 'Red Hat Display', sans-serif;
+$primary-color:hsl(225, 100%, 94%);
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: $primary-color;
+    background-image: url('../images/pattern-background-desktop.svg');
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Wrapper{
+    width: 40rem;
+    height: 60rem;
+    background-color: white;
+    border-radius: $border-radius;
+    .top-image{
+        width: 40rem;
+        border-top-left-radius: $border-radius;
+        border-top-right-radius: $border-radius;
+    }
+    .content{
+        margin: 4.5rem;
+        margin-bottom: 1.5rem;
+        .heading{
+            text-align: center;
+            font-family: $font-family;
+            font-size: 2.5rem;
+            font-weight: bolder;
+            color: hsl(223, 47%, 23%);
+        }
+        .description{
+            padding: 0.5rem;
+            color:hsl(224, 23%, 55%);
+            font-family: $font-family;
+            font-size: 1.6rem;
+            text-indent: 0.5rem;
+            text-align-last:center ;
+        }
+    }
+    .subscription{
+        border-radius: $border-radius;
+        margin-left: 4.5rem;
+        margin-right: 4.5rem;
+        height: 9rem;
+        background-color:hsl(225, 100%, 98%);
+        position: relative;
+        // display: flex;
+
+        .icon{
+            position: absolute;
+            top:2rem;
+            left:0rem;
+            size: 4rem;
+            margin-left: 2rem;
+            
+        }
+        .duration{
+            font-family: $font-family;
+            font-size: 16px;
+            color: hsl(223, 47%, 23%);
+            height: 2rem;
+            font-weight: bold;
+            position: absolute;
+            top: 2rem;
+            left: 8rem;
+           
+        }
+        .price{
+            height: 2rem;
+            font-size: 16px;
+            font-family: $font-family;
+            color: hsl(224, 23%, 55%);
+            position: absolute;
+            left: 8rem;
+            top: 4.5rem;
+        }
+        .link{
+            position: absolute;
+            top:3rem;
+            right: 2rem;
+            
+            .change{
+               
+                font-family: $font-family;
+                font-size: 16px;
+                font-weight: bold;
+                color:  hsl(245, 75%, 52%);
+            }
+            .change:hover{
+                color:  hsl(245, 75%, 70%);
+                text-decoration: none;
+            }
+        }
+        
+        
+   
+    }
+    .btn{
+        background-color:  hsl(245, 75%, 52%);
+        color: white;
+        font-family: $font-family;
+        margin-top:3rem ;
+        margin-left: 4.5rem;
+        margin-right: 4.5rem;
+        height: 4.5rem;
+        width:31rem;
+        border:none;
+        border-radius: $border-radius;
+        
+        
+    }
+    .btn:hover{
+            cursor: pointer;
+            background-color: hsl(245, 75%, 70%);
+    }
+    .cancel_now{
+        display: inline-block;
+        margin-top: 1.5rem;
+        width: 100%;
+        text-align: center;
+        font-family: $font-family;
+        font-size: 16px;
+        color: hsl(224, 23%, 55%);
+        font-weight: bold;
+        
+    }
+    .cancel_now:hover{
+        cursor: pointer;
+        color: hsl(223, 47%, 23%);
+    }
+
+}
+
+@import 'mobile.scss';
